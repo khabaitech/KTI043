@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moving Ball Animation</title>
+  <style>
+  button{
+    background: blueviolet;
+    color: white;
+    position: absolute;
+    top: 800px;
+    left: 400px;
+    font-size: 45px;
+    border-radius: 8px;
+  }
+  button:hover{
+    
+    color: orangered;
+  }
+  #one{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: pink;
+    position: absolute;
+    top: 800px;
+    left: 400px;
+    z-index: -3;
+    animation: abc 2s 1;
+  }
+   
+  @keyframes abc{
+    30%{
+      top: 50px;
+      left: 100px;
+      background: whitesmoke;
+      border: 2px solid red;
+    }
+  }
+  
+  #two{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: blue;
+    position: absolute;
+    top: 800px;
+    left: 400px;
+    z-index: -3;
+    
+    animation: def 2s 1;
+  }
+   
+  @keyframes def{
+    75%{
+      top: 100px;
+      left: 900px;
+      background: greenyellow;
+      border: 2px solid greenyellow;
+    }
+  }
+  #three{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: greenyellow;
+    position: absolute;
+    top: 800px;
+    left: 400px;
+    z-index: -3;
+    animation: ghi 2s 1;
+  }
+   
+  @keyframes ghi{
+    55%{
+      top: 50px;
+      left: 500px;
+      background: darkgreen;
+      border: 2px solid seagreen;
+    }
+  }
+  #four{
+    height: 40px;
+    width: 20px;
+    border-radius: 50%;
+    background: brown;
+    position: absolute;
+    top: 800px;
+    left: 400px;
+    z-index: -3;
+    animation: jkl 2s 1;
+  }
+   
+  @keyframes jkl{
+    55%{
+      bottom: 100px;
+      left: 10px;
+      background: burlywood;
+      border: 2px solid seagreen;
+    }
+  }
+    #five{
+    height: 40px;
+    width: 20px;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+    top: 800px;
+    left: 400px;
+    z-index: -3;
+    animation: mno 2s 1;
+  }
+   
+  @keyframes mno{
+    55%{
+      top: 1700px;
+      left: 800px;
+      background: whitesmoke;
+      border: 2px solid coral;
+    }
+  }
+  #a{
+    height: 40px;
+    width: 20px;
+    border-radius: 50%;
+    background: yellow;
+    position: absolute;
+    top: 800px;
+    left: 400px;
+    z-index: -3;
+    animation: abc2 2s 1;
+  }
+   
+  @keyframes abc2{
+    55%{
+      top: 1300px;
+      left: 900px;
+      background: whitesmoke;
+      border: 2px solid black;
+    }
+  }
+    #b{
+    height: 40px;
+    width: 20px;
+    border-radius: 50%;
+    background: saddlebrown;
+    position: absolute;
+    top: 800px;
+    left: 400px;
+    z-index: -3;
+    animation: abc3 2s 1;
+  }
+   
+  @keyframes abc3{
+    55%{
+      top: 1700px;
+      right: 900px;
+      background: whitesmoke;
+      border: 2px solid black;
+    }
+  }
+  #c{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: greenyellow;
+    position: absolute;
+    top: 800px;
+    left: 400px;
+    z-index: -3;
+    animation: abc4 2s 1;
+  }
+   
+  @keyframes abc4{
+    30%{
+      top: 1600px;
+      left: 100px;
+      background: whitesmoke;
+      border: 2px solid red;
+    }
+  }
+  #d{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    top: 800px;
+    left: 400px;
+    z-index: -3;
+    animation: abc5 2s 1;
+  }
+   
+  @keyframes abc5{
+    30%{
+      top: 1000px;
+      left: 100px;
+      background: whitesmoke;
+      border: 2px solid black;
+    }
+  }
+   #e{
+    height: 40px;
+    width: 20px;
+    border-radius: 50%;
+    background: blueviolet;
+    position: absolute;
+    top: 800px;
+    left: 400px;
+    z-index: -3;
+    animation: abc6 2s 1;
+  }
+   
+  @keyframes abc6{
+    55%{
+      top: 1600px;
+      left: 900px;
+      background: whitesmoke;
+      border: 2px solid black;
+    }
+  }
+   #f{
+    height: 40px;
+    width: 20px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    top: 800px;
+    left: 400px;
+    z-index: -3;
+    animation: abc7 2s 1;
+  }
+   
+  @keyframes abc7{
+    55%{
+      top: 1200px;
+      left: 500px;
+      background: whitesmoke;
+      border: 2px solid black;
+    }
+  }
+ #g{
+     height: 40px;
+     width: 20px;
+     border-radius: 50%;
+     background: red;
+     position: absolute;
+     top: 800px;
+     left: 400px;
+     z-index: -3;
+     animation: abc8 2s 1;
+   }
+  
+   @keyframes abc8 {
+     55% {
+       top: 1000px;
+       left: 900px;
+       background: whitesmoke;
+       border: 2px solid black;
+     }
+   }
+ #h{
+      height: 40px;
+      width: 20px;
+      border-radius: 50%;
+      background: blue;
+      position: absolute;
+      top: 800px;
+      left: 400px;
+      z-index: -3;
+      animation: abc9 2s 1;
+    }
+   
+    @keyframes abc9 {
+      55% {
+        top: 1600px;
+        left: 1000px;
+        background: whitesmoke;
+        border: 2px solid black;
+      }
+    }
+    #i{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: pink;
+    position: absolute;
+    top: 800px;
+    left: 400px;
+    z-index: -3;
+    animation: def2 2s 1;
+  }
+   
+  @keyframes def2{
+    30%{
+      top: 500px;
+      left: 50px;
+      background: whitesmoke;
+      border: 2px solid red;
+    }
+  } 
+#j{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: deeppink;
+    position: absolute;
+    top: 800px;
+    left: 400px;
+    z-index: -3;
+    animation: def3 2s 1;
+  }
+   
+  @keyframes def3{
+    30%{
+      top: 300px;
+      left: 100px;
+      background: whitesmoke;
+      border: 2px solid red;
+    }
+  }
+  
+#k{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: purple;
+    position: absolute;
+    top: 800px;
+    left: 400px;
+    z-index: -3;
+    animation: def5 2s 1;
+  }
+   
+  @keyframes def5{
+    30%{
+      top: 1390px;
+      left: 100px;
+      background: whitesmoke;
+      border: 2px solid red;
+    }
+  }
+#l{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: yellow;
+    position: absolute;
+    top: 800px;
+    left: 400px;
+    z-index: -3;
+    animation: def6 2s 1;
+  }
+   
+  @keyframes def6{
+    60%{
+      top: 400px;
+      left: 1000px;
+      background: darkred;
+      border: 2px solid red;
+    }
+  }
+  
+#m{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: greenyellow;
+    position: absolute;
+    top: 800px;
+    left: 400px;
+    z-index: -3;
+    animation: ghi1 2s 1;
+  }
+   
+  @keyframes ghi1{
+    30%{
+      top: 90px;
+      left: 10px;
+      background: whitesmoke;
+      border: 2px solid red;
+    }
+  }
+  
+  
+  
+  
+    
+  </style>
+</head>
+
+<body>
+  <a href="task9.html">
+  <button>
+    Click Here!
+  </button>
+  <div id="one">
+  </div>
+  <div id="two">
+    
+  </div>
+  <div id="three">
+  </div>
+  <div id="four">
+  </div>
+  <div id="five">
+  </div>
+  <div id="a"></div>
+  <div id="b">
+  </div>
+  <div id="c">
+  </div>
+  <div id="d">
+  </div>
+  <div id="e">
+  </div>
+  <div id="f">
+  </div>
+    <div id="g"></div>
+      <div id="h">
+      </div>
+        <div id="i">
+        </div>
+          <div id="j">
+          </div>
+          <div id="k">
+          </div>
+            <div id="l">
+            </div>
+              <div id="m">
+              </div>
+    
+    
+  
+
+</body>
+
+</html>

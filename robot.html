@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Robot</title>
+	<style type="text/css">
+		body{
+			background-image: url(rst.jpg);
+			background-repeat: no-repeat;
+			background-size:100%;
+		}
+
+		
+		@keyframes roh{
+			50%{
+				left: 50px;
+			}
+		}
+		/*.main{
+			animation: aa 5s infinite;
+
+		}
+		@keyframes aa{
+			50%{
+				transform: rotate(50deg);
+			}
+		}*/
+		.one{
+			width: 0;
+	        height: 0;
+	        border-left: 10px solid transparent;
+	        border-right: 10px solid transparent;
+	        border-bottom: 15px solid #555;
+		}
+
+		.a{
+			width: 0;
+	        height: 0;
+	        border-left: 8px solid transparent;
+	        border-right: 8px solid transparent;
+	        border-bottom: 80px solid #555;
+	        border-top-left-radius: 50px;
+	        border-top-right-radius: 50px;
+
+
+		}
+		.leye{
+			height: 40px;
+			width: 3%;
+			border-radius: 50%;
+			margin-top: 150px;
+			position: absolute;
+			margin-left: -60px;
+            background: radial-gradient(black,white);
+			animation: abh 5s infinite;
+		}
+		.reye{
+			height: 40px;
+			width: 3%;
+			border-radius: 50%;
+			top: 171px;
+			position: absolute;
+			margin-left: 30px;
+			background: radial-gradient(black,white);;
+			animation: abh 5s infinite;
+		}
+		.mouth{
+			 height: 0px;
+             width: 60px;
+             background: linear-gradient(red,pink);
+             border-radius: 20px;
+             top: 230px;
+             margin-left: -28px;
+             position: absolute;
+             animation: abhijit 5s infinite;
+		}
+		@keyframes abhijit{
+			50%{
+				transform: scale(1.2);
+				height: 10px;
+			}
+		}
+		@keyframes abh{
+			50%{
+				opacity: 0;
+			}
+		}
+		.b{
+			background-color: yellow;
+			height: 150px;
+			width: 150px;
+			border-top-left-radius:50%;
+			border-top-right-radius:50%;
+		}
+		.bone{
+			height: 50px;
+			width: 150px;
+			background-color: #555;
+			border-bottom-left-radius:20px;
+			border-bottom-right-radius:20px;
+		}
+		.c{
+			color: yellow;
+			border-top: 200px solid yellow;
+	        border-left: 30px solid transparent;
+	        border-right: 30px solid transparent;
+	        height:0px;
+	        width: 200px;
+
+		}
+		.d{
+			height: 100px;
+			width: 100px;
+			border-radius: 50%;
+			border: 10px solid red;
+		}
+		.e{
+			height: 100px;
+			width: 100px;
+			border-radius: 50%;
+			background-color: white;
+		}
+		.right{
+			height: 150px;
+			width: 50px;
+			margin-left: 229px;
+			 margin-top: -150px;
+			background-color: yellow;
+			border-top-right-radius:50%;
+			/*animation: rohia 5s infinite;
+			z-index: -5*/
+		}
+		.left{
+			height: 150px;
+			width: 50px;
+			margin-left: -308px;
+			 margin-top: -200px;
+			background-color: yellow;
+			border-top-left-radius:50%;
+			/*animation: rohib 5s infinite;
+			z-index: -5;*/
+		}
+		/*@keyframes rohia{
+			50%{
+                 transform: rotate(-45deg);
+			}
+		}
+		@keyframes rohib{
+			50%{
+                 transform: rotate(45deg);
+			}
+		}*/
+		.ta{
+			height: 9px;
+			width: 8px;
+			background-color: white;
+			margin-left: 4px;
+			animation: teeth 5s infinite;
+		}
+		.tb{
+			height: 10px;
+			width: 8px;
+			background-color: white;
+			margin-left: 40px;
+			margin-top: -28px;
+			animation: teeth 5s infinite;
+		}
+		.tc{
+			height: 10px;
+			width: 8px;
+			background-color: white;
+			margin-left: -40px;
+			margin-top: -28px;
+			animation: teeth 5s infinite;
+		}
+		@keyframes teeth{
+			20%{
+				opacity: 0.5;
+			}
+			50%{
+				opacity: 1.5;
+			}
+			100%{
+				opacity: 0.0;
+			}
+		}
+		.main{
+			animation: circ 4s infinite;
+		}
+
+		
+		@keyframes circ{
+			50%{
+				margin-left: 800px;
+				 }
+		100%{
+				 	margin-left: -800px;
+				 }
+		}
+		.e img{
+			animation: rot 5s infinite;
+		}
+		@keyframes rot{
+			25%{
+				transform: rotate(25deg);
+			}
+			45%{
+				transform: rotate(45deg);
+			}
+			65%{
+				transform: rotate(65deg);
+			}
+			85%{
+				transform: rotate(85deg);
+			}
+			100%{
+				transform: rotate(100deg);
+			}
+		}
+
+	</style>
+</head>
+<body>
+<center>
+	<div class="main">
+		<div class="one"></div>
+		<div class="a">
+			<div class="leye"></div>
+			<div class="reye"></div>
+			<div class="mouth">
+				<div class="ta"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<div class="tb"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<div class="tc"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</div>
+		</div>
+		<div class="b"></div>
+		<div class="bone"></div>
+		<div class="c">
+			<div class="left">
+				
+			</div>
+			<div class="right"></div>
+		</div>
+		<div class="d">
+			<div class="e"><img src="chac.png" style="height: 100px; width: 100px;"></div>
+		</div>
+		<div class="circle">
+		<div style="height: 50px; width: 50px; background-color: orange; border-radius: 50%;margin-left: -310px; margin-top: -160px;"></div>
+		<div style="height: 50px; width: 50px; background-color: orange; border-radius: 50%;margin-left: 310px; margin-top: -48px;">
+			
+		</div>
+		</div>
+		
+		</center>
+	</div>
+
+</body>
+</html>

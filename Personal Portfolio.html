@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <style>
+    
+      *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+}
+.logo{
+  height: 70px;
+  width: 100px;
+}
+
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: red;
+}
+.detel{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+.detel h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span{
+    color: orange;
+}
+.detel p{
+    color: #000;
+    line-height: 22px;
+}
+
+.detel a{
+    background: #212121;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #eff4fd;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+.detel a:hover{
+    transform: translateY(-5px);
+    color: orange;
+}
+
+.images{
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    bottom: 400px;
+    right: 20px; 
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape{
+    bottom:40%;
+}
+
+.images:hover .boy{
+    top: 55%;
+}
+.social media {
+    position: absolute;
+    bottom: 40px;
+    width: 210px;
+    background: red; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.social media a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+p{
+    font-family: "Source Code Pro", monospace;
+}
+.intro h2{
+    font-family: "fira Sans", sans-serif;
+    margin: 15%;
+}
+.intro p{
+    font-family: "Source Code Pro", monospace;
+}
+
+.skillcontainer{
+    padding: 12px;
+}
+.introcontainer p12{
+    color: coral;
+    font-size: 30px;
+   font-family: monospace;
+}
+
+.skilltem{
+display: flex;
+align-items: center;
+margin: 5%;
+}
+.skill{
+    width: 305px;
+    height: 26px;
+    background-color: blue;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.Education{
+    margin-left: 25%;
+    font-family: fantasy;
+    color: cornflowerblue;
+    font-size: 30px; 
+}
+
+.Education p12{
+    margin-left: 25%;
+    color: blueviolet;
+    font-size: 30px;
+   font-family: cursive;
+}
+.Education p1{
+    margin-left: 25%;
+    color: cadetblue;
+    font-size: 30px;
+   font-family: sans-serif;
+}
+
+.Education p2{
+   margin-left: 25%;
+    color: orange;
+    font-size: 30px;
+   font-family: monospace;
+}
+.Education p3{
+   margin-left: 25%;
+    color: cadetblue;
+    font-size: 30px;
+   font-family: sans-serif;
+}
+.Education p4{
+   margin-left: 25%;
+    color: darkred;
+    font-size: 30px;
+   font-family: monospace;
+}
+
+
+
+
+
+
+
+
+
+.introcontainer{
+    margin-left: 30%;
+}
+.Me{
+   width: 25%;
+    height: 50%;
+    position: absolute;
+    top: 1120px;
+    left: 30px; 
+}
+.introcontainer h1{
+    margin-left: 30%;
+    font-size: 50px;
+    color: blue;
+    font-family: fantasy;
+}
+.introcontainer p{
+    margin-left: 25%;
+    color: orange;
+    font-size: 20px;
+   font-family: monospace;
+}
+.introcontainer p1 p2{
+    
+    color: orange;
+    font-family: fantasy;
+    font-size: 20px;
+}
+.introcontainer h3{
+    
+    color: orange;
+    font-family: serif;
+    font-size: 40px;
+}
+.introcontainer p3{
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    justify-content: space-between;
+}
+.introcontainer p4{
+    justify-content: center;
+    font-family: monospace;
+    font-size: 20px;
+    margin-left: 20%;
+}
+.introcontainer p5{
+    font-family: serif;
+    font-size: 32px;
+    margin-left: 15%;
+    color: blue;
+}
+.introcontainer p6{
+    font-family: fantasy;
+    font-size: 28px;
+    color: darkorange;
+}
+.introcontainer p7{
+    font-family: cursive;
+    font-size: 48px;
+    color: gold;
+}
+.introcontainer p8{
+    font-family: fantasy;
+    font-size: 35px;
+    color: lightgreen;
+}
+.introitem{
+     font-family: "Sans, sans-serif";
+     margin: 3%;
+
+}
+
+.introitem h2{
+    font-family: "Sans, sans-serif";
+
+}
+.introitem p{
+    font-family: "Source Code Pro", monospace;
+
+}
+.btn{
+    font-size: 25px;
+    font-style: italic;
+    margin: 12px 0;
+    padding: 10px 11px;
+    background-color: plum;
+    border-radius: 8px;
+}
+.btn:hover{
+    color: white;
+    background-color: orange;
+    transform: translateY(-5px);
+}
+.t2{
+    width: 125px;
+}
+.t3{
+    width: 175px;
+}
+#element{font-size:35px; }
+    </style>
+
+</head>
+<body>
+<div class="hero">
+<nav>
+    <img src="/logo.jpg" class="logo">
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="https://about.me/kumar_prakash">ABOUT</a></li>
+        <li><a href="Personal Portfolio.html">PORTFOLIO</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="https://forms.gle/8PdJmb9EknnbLqw68">HIRE ME</a></li>
+        
+    </ul>
+</nav>
+<div class="detel">
+    <h1>I'm Kumar <span>Prakash</span></h1>
+    <p>This is my official portfolio website to shows all
+        <br>Details and work experience of<span id="element">
+   </span> </p>
+    <a href="https://forms.gle/PnrVEFEHx6TZ7xLt8">HIRE ME</a>
+    <a href="/Prakash's Resume.pdf">DOWNLOAD RESUME</a>
+</div>
+
+  <!-- Element to contain animated typing -->
+  <span id="element"></span>
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web developer', 'Web Creator','Web Designer' ],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+
+
+
+
+<div class="images">    
+    <img src="/logo.jpg"  class="shape" >
+    <img src="./Prakash.jpg" class="boy">
+    </div>
+    
+    <br><br><br><br>
+                        
+     <div class="social media">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter' ></i></a>
+        <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+    </p>
+
+
+</div>
+    <br><br><br><br> <br><br><br><br> <br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="main">
+    <div class="introcontainer">
+        <h1> About Me<hr></h1><br>
+        <p> HELL0! I AM PRAKASH KUMAR </p><br><br>
+        <p1> <p2>Hi!  I am Prakash Kumar </p2> I'm a front-end web developer living in Patna(Bihar),India. I love <br><br>to develop responsive and creative Web Pages. <br><br> </p1>
+        <img src="/Prakash Kumar.jpg" class="Me">
+        <BR><BR><p3> Name : PRAKASH KUMAR <br><br><br>
+            Age  : 18 Years <br><br><br>
+            Email : pvprakashsingh07@gmail.com   <br><br><br>
+            Website :  https://about.me/kumar_prakash      <br><br><br>
+            Address : Aurangabad (Bihar)</p3>
+            <br><br><br><br><br>
+            <p4>I am available for freelance projects.</p4><br><br><br>
+            <p5>Let's</p5> 
+            <p6>work</p6>
+            <p7>together</p7>
+            <p8>indeed !</p8>
+
+            
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        <h3><i class="fa fa-shirtsinbulk"> My Skills </i></h3><hr><br>
+        <h4>My Special Expertise</h4>
+        <br><br><br><br>
+        <p12><i class="fa fa-asterisk"> Technical Skills </i></p12>
+        <div class="skillcontainer">
+            <div class="skilltem"><h4> HTML:</h4> <div class="skill "></div></div>
+            <div class="skilltem"><h4> CSS:</h4> <div class="skill "></div></div>
+            <div class="skilltem"><h4> Javascript:</h4> <div class="skill t2"></div></div>
+            <div class="skilltem"><h4> Php:</h4> <div class="skill"></div></div>
+            <div class="skilltem"><h4> Python:</h4> <div class="skill t3"></div></div>
+        </div></div>
+         <br><br><br><br><br><br><br><br>
+         
+        <div class="Education">
+          <h1> Education <hr></h1>
+          <br><br><br>
+          <p12><i class="fa fa-bookmark">  Education </i></p12>
+          <br><br><br>
+          <p1><i class="fa fa-calendar-check-o"> 2020- 2021</i></p1><br><br>
+          <p2> Ambika Public School, CBSE </p2>
+          <br><br><br><br>
+          <p3><i class="fa fa-calendar-check-o"> 2022-till now..</i></p3>
+          <br><br>
+           <p4>Government Polytechnic, Patna-7 </p4>
+          
+        </div>
+        
+         <br><br><br><br><br><br><br><br>
+</div>
+           
+           
+         
+         
+         
+        <br><br><br><br><br><br><br><br>
+        <div class="introitem">
+            <h2>Learn Javascript -in Fun Way!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, veritatis vero debitis quibusdam eligendi dolor! Veritatis officia dolorum quisquam perspiciatis deserunt minima est?</p>
+            <br><button class="btn">Read More</button>
+        </div>
+        <div class="introitem">
+            <h2>Learn Javascript -in Fun Way!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, veritatis vero debitis quibusdam eligendi dolor! Veritatis officia dolorum quisquam perspiciatis deserunt minima est?</p>
+            <br><button class="btn">Read More</button>
+        </div>
+        <div class="introitem">
+            <h2>Learn Javascript -in Fun Way!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, veritatis vero debitis quibusdam eligendi dolor! Veritatis officia dolorum quisquam perspiciatis deserunt minima est?</p>
+            <br><button class="btn">Read More</button>
+        </div>
+        <div class="introitem">
+            <h2>Learn Javascript -in Fun Way!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, veritatis vero debitis quibusdam eligendi dolor! Veritatis officia dolorum quisquam perspiciatis deserunt minima est?</p>
+            <br><button class="btn">Read More</button>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
