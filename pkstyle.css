@@ -328,10 +328,10 @@ nav .fa{
 }
 @media only screen and (max-width: 600px){
   #header{
-    background-image: url(/prak6.png);
+    background-image: url(prak6.png);
   }
   .logo{
-    background-image: url(/logo2.jpg);
+    background-image: url(logo2.jpg);
     height: 40px;
     width: 40px;
   }
